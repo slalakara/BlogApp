@@ -1,0 +1,470 @@
+.container {
+  margin: 0 auto;
+  max-width: 1540px;
+  padding: 70px 90px;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  max-width: 1540px;
+  margin-bottom: 70px;
+}
+
+.Logo {
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  display: flex;
+  font-weight: 500;
+  gap: 30px;
+  a {
+    font-size: 15px;
+    color: #969696;
+    text-decoration: none;
+  }
+  .selected {
+    color: #0D0D0D;
+    text-decoration: underline #1C5CFF 2px;
+  }
+}
+
+
+.content {
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+}
+
+.content h1 {
+  color: #0D0D0D;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.TitlesWrapper {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  a {
+    text-decoration: none;
+    text-decoration: none;
+    gap: 15px;
+    display: grid;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.Titles {
+  color: #797979;
+  background-color: #ffff;
+  border: 2px solid #C9C9C9;
+  box-shadow: 1px 0px 0px 1px #C9C9C9;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Pagination {
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 2px;
+    color: #797979;
+  }
+  .activePage {
+    color: #ffff;
+    background-color: #1C5CFF;
+  }
+}
+
+.Pagination a:hover {
+  background-color: #d2d2d2;
+}
+
+.limitSelect {
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: 2px solid #969696;
+  color: #797979;
+  margin-bottom: 15px;
+}
+
+.limitSelect option {
+  padding: 5px 7px;
+  background-color: #f9f9f9;
+}
+
+.limitSelect option:active {
+  background-color: #1C5CFF;
+  color: #ffff;
+}
+
+.content a {
+  text-decoration: none;
+  color: #1C5CFF;
+  margin-bottom: 15px;
+}
+
+.Post {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.PostDetail {
+  display: grid;
+  gap: 180px;
+  grid-template-columns: 5fr 4fr;
+}
+
+hr {
+  margin-bottom: 30px;
+  border: 1px solid #C9C9C9;
+}
+
+.PostButtons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.PostButtons button{
+  padding: 10px 25px;
+  width: 210px;
+  border-radius: 20px;
+}
+
+.LikeBtn {
+  background-color: #1C5CFF;
+  border: 2px solid #1C5CFF;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.LikeBtn:active {
+  background-color: #3c73ff;
+}
+
+.ShowBtn {
+  background-color: #C9C9C9;
+  border: 2px solid #C9C9C9;
+  color: #ffff;
+}
+
+.comments-section {
+  width: 400px;
+}
+
+.Comments {
+  font-size: 16px;
+  li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+}
+
+.comments-list {
+  padding: 25px;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: 0.3px solid #d2d2d2;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+.comment-item p {
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scroll bar izleme */
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border-radius: 10px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.new-comment {
+  display: flex;
+  gap: 10px;
+  input{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0.3px solid #d2d2d2;
+  }
+  button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0.3px solid #1C5CFF;
+    background-color: #1C5CFF;
+    color: #ffff;
+  }
+}
+
+.contact {
+  display: flex;
+  gap: 221px;
+  align-items: center;
+}
+
+img {
+  width: 400px;
+}
+
+.ContactInputArea {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 700px;
+  button {
+    padding: 15px 20px;
+    border: 2px solid #1C5CFF;
+    background-color: #1C5CFF;
+    color: #fff;
+    border-radius: 15px;
+  }
+}
+
+.ContactInputArea input {
+  padding: 15px 478px 15px 20px;
+  background-color: #f9f9f9;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: 1px solid #b3b3b3;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.CityPost {
+  display: flex;
+  gap: 50px;
+}
+
+.About {
+  font-size: 16px;
+  width: 1000px;
+  p {
+    margin-bottom: 30px;
+    color: #555;
+  }
+  h2 {
+    margin-bottom: 10px;
+    text-decoration: underline 2px #1C5CFF;
+    color: #797979;
+  }
+
+}
+
+.Home {
+  width: 1000px;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+    line-height: 2;
+  }
+}
+
+.Home fieldset {
+  padding: 50px;
+  border: 1px solid #969696;
+}
+
+.Home legend {
+  color: #797979;
+  text-decoration: underline 2px #1C5CFF;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  button {
+    padding: 2px 8px;
+    margin-right: 10px;
+    border: unset;
+  }
+  p {
+    margin-right: 15px;
+  }
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container.light-mode , .container.light-mode .footer {
+  background-color: #f0f0f0;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.container.dark-mode .Titles, .PostButtons .limitSelect, .option{
+  background-color: #333333;
+  border: 2px solid  #1e1e1e;
+  box-shadow: 1px 0px 0px 1px #333333;
+}
+
+.container.dark-mode .limitSelect, .option{
+  background-color: #333333;
+  border: 2px solid  #1e1e1e;
+}
+
+.container.dark-mode .new-comment input{
+  background-color: #333333;
+  border: 2px solid  #1e1e1e;
+}
+
+.container.dark-mode .content h1, .nav .selected, .Post, hr, .Comments{
+  color: #555;
+}
+
+.container.dark-mode hr {
+  border: 1px solid #333333;
+}
+
+.container.dark-mode .LikeBtn {
+  background-color: #0e3087;
+  border: 2px solid #0e3087;
+}
+
+.container.dark-mode .new-comment button {
+  background-color: #0e3087;
+  border: 2px solid #0e3087;
+}
+
+.container.dark-mode .ShowBtn {
+  background-color: #555;
+  border: 2px solid #555;
+  color: #333333;
+}
+
+.container.dark-mode .contact h2, p {
+  color: #555;
+}
+
+.container.dark-mode .contact input {
+  background-color: #3333;
+  border: 2px solid #3333;
+  color: #555;
+}
+
+.container.dark-mode .scroll-container {
+  border-right: 1px solid #333333;
+}
+
+.container.dark-mode .scroll-container::-webkit-scrollbar-track {
+  background-color: #333333;
+}
+
+.container.dark-mode .scroll-container::-webkit-scrollbar-thumb {
+  background: #797979;
+}
+
+.container.dark-mode .scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #797979;
+}
+
+.container.dark-mode .Logo {
+  color: #5555;
+  -webkit-text-stroke: 1px solid #333;
+}
+
+.container.dark-mode .Pagination a{
+  color: #99999955;
+  a:hover {
+    background-color: #0e3087;
+  }
+}
+
+.container.dark-mode .Pagination a:hover {
+  background-color: #0e3087;
+  color: #9a9a9a;
+}
+
+.container.dark-mode .form-group input {
+  background-color: #3333;
+  border: 2px solid #3333;
+  color: #555;
+}
+
+.container.dark-mode .ContactInputArea button {
+  background-color: #0e3087;
+  border: 2px solid #0e3087;
+}
+
+.container.dark-mode .comment-item button {
+    margin-right: 10px;
+    border: unset;
+    background-color: unset;
+    color: #555;
+}
